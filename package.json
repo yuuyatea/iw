@@ -1,0 +1,17 @@
+{
+  "name": "html-source",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:MasaoAsada/halosaka2-1-2018.git",
+  "author": "botti",
+  "license": "MIT",
+  "scripts": {
+    "dev":        "node-sass -w --output-style expanted assets/sass public/css"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
