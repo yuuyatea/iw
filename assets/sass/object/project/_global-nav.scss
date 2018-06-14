@@ -1,0 +1,23 @@
+@charset "utf-8";
+// object/project/_groval-nav.scss
+
+.p-global-nav {
+	&__items {
+		display: flex;
+		justify-content: space-around;
+		padding: 0 20px;
+		background: #fff;
+	}
+	&__item {
+		display: block;
+		width: 70px;
+
+		&__link {
+			img {
+				max-width: 60px;
+				max-height: 50px;
+			}
+		}
+	}
+		
+}

@@ -1,0 +1,11 @@
+@charset "utf-8";
+// object/project/_article.scss
+
+.p-article {
+	&__card {
+		margin: 5vw 10%;
+		padding: 3vw 5vw;
+		border-radius: 5px;
+		box-shadow: 0px 5px 20px #dfdfdf;
+	}
+}

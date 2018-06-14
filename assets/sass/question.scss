@@ -1,3 +1,4 @@
+@charset "utf-8";
 // question.html用のscss
 
 
@@ -5,9 +6,11 @@
 // Foundation
 // ==========================================================================
 
-@import "~normalize.css";
-@import "foundation/_function";
+@import "foundation/_reset";
 @import "foundation/_variable";
+@import "foundation/_function";
+@import "foundation/_base";
+
 
 // ==========================================================================
 // Layout
@@ -18,6 +21,7 @@
 @import "layout/_main";
 @import "layout/_nav"; 
 
+
 // ==========================================================================
 // Object
 // ==========================================================================
@@ -26,13 +30,18 @@
 // Component
 // -----------------------------------------------------------------
 
-// none
+@import "object/component/_card";
+@import "object/component/_user-icon";
+
 
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
 
-// none
+@import "object/project/_header";
+@import "object/project/_global-nav";
+@import "object/project/_article";
+
 
 // -----------------------------------------------------------------
 // Utility
