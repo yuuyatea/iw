@@ -1,13 +1,19 @@
+// question.html用のscss
+
+
 // ==========================================================================
 // Foundation
 // ==========================================================================
 
 @import "~normalize.css";
+@import "foundation/_function";
+@import "foundation/_variable";
 
 // ==========================================================================
 // Layout
 // ==========================================================================
 
+@import "layout/_wrapper";
 @import "layout/_header";
 @import "layout/_main";
 @import "layout/_nav"; 

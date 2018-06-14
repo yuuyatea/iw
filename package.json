@@ -6,9 +6,11 @@
   "author": "botti",
   "license": "MIT",
   "scripts": {
-    "dev":        "node-sass -w --output-style expanted assets/sass public/css"
+    "dev": "node-sass -w --output-style expanted assets/sass/question.scss public/css/question.css",
+    "sync": "browser-sync start --server --files '**/*'"
   },
   "dependencies": {
+    "browser-sync": "^2.24.4",
     "normalize.css": "^8.0.0"
   },
   "devDependencies": {
