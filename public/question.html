@@ -12,123 +12,117 @@
 <body>
 	<!--wrapperここから -->
 	<div id="wrapper">
-		<div id="header--content">
-			<header>
-				<h1><span>おもてなし</span>質問ページ</h1>
-			</header>
-		</div>
+		<header id="header">
+			<h1 class="p-header-title">
+				<span>おもてなし</span>
+				質問ページ
+			</h1>
+		</header>
 
 		<!-- グローバルナビゲーションここから -->
-		<div id="nav--content">
-			<nav>
-				<ul>
-					<li>
-						<a href="#">
-							<img src="#" alt="質問ページ">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="#" alt="メール">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="#" alt="検索">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="#" alt="周辺Map">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="#" alt="ユーザー情報">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span>img</span>
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+		<nav id="nav">
+			<ul class="p-global-nav__items">
+				<li class="p-global-nav__item">
+					<a href="#" class="p-global-nav__item__link">
+						<img src="#" alt="質問ページ">
+					</a>
+				</li>
+				<li class="p-global-nav__item">
+					<a href="#" class="p-global-nav__item__link">
+						<img src="#" alt="メール">
+					</a>
+				</li>
+				<li class="p-global-nav__item">
+					<a href="#" class="p-global-nav__item__link">
+						<img src="#" alt="検索">
+					</a>
+				</li>
+				<li class="p-global-nav__item">
+					<a href="#" class="p-global-nav__item__link">
+						<img src="#" alt="周辺Map">
+					</a>
+				</li>
+				<li class="p-global-nav__item">
+					<a href="#" class="p-global-nav__item__link">
+						<img src="#" alt="ユーザー情報">
+					</a>
+				</li>
+			</ul>
+		</nav>
 		<!-- グローバルナビゲーションここまで -->
 
 
-
 		<!-- メインコンテンツここから（記事一覧を入れるところ。基本ここを使い回す） -->
-		<div class="main--content">
-			<!-- 記事１ここから -->
-			<div class="article--card sos">
-				<article>
-					<a href="#">
-						<div class="card--left">
-							<div class="user-icon">
-								<p>
-									<img src="#" alt="#">
+		<div id="main">
+			<!-- 記事について -->
+			<div class="p-article">
+				<!-- 記事１ここから -->
+					<article class="p-article__card c-card">
+						<a href="#" class="c-card__link">
+							<div class="c-card__left">
+								<div class="c-card__left-column c-user-icon">
+									<p class="c-user-icon__image">
+										<img src="#" alt="#">
+									</p>
+								</div>
+							</div>
+							<div class="c-card__right-column c-card__right-column--sos">
+								<h2>タイトル</h2>
+								<div class="c-sos-label">
+									<p>SOS</p>
+								</div>
+								<ul class="c-card__right-column__labels">
+									<li class="c-card__right-column__label">Location: Tokyo</li>
+									<li class="c-card__right-column__label">Category: groumet</li>
+								</ul>
+							</div>
+							<div class="c-card__meta">
+								<p class="c-card__meta__left-column">Answer: 0 people</p>
+								<p class="c-card__meta__right-column">
+									<time datatime="YYYY-MM-DDThh:mm:ssTZD">2018/05/12</time>
 								</p>
 							</div>
-						</div>
-						<div class="card--right">
-							<h2>タイトル</h2>
-							<div class="sos-label">
-								<p>SOS</p>
-							</div>
-							<div class="card-label">
-								<p>Location: Tokyo</p>
-								<p>Category: groumet</p>
-							</div>
-						</div>
-						<div class="card--meta">
-							<p>Answer: 0 people</p>
-							<p>
-								<time datatime="YYYY-MM-DDThh:mm:ssTZD">2018/05/12</time>
-							</p>
-						</div>
-					</a>
-				</article>
-			</div>
-			<!-- 記事１ここまで -->
+						</a>
+					</article>
+				<!-- 記事１ここまで -->
 
-			<!-- 広告エリアここから -->
-			<div class="article--card">
-				<article>
+				<!-- 広告エリアここから -->
+				<article class="p-article__card c-card c-card--pr">
+					<a href="#" class="c-card__link">
 					PR Groumet ~
-				</article>
-			</div>
-			<!-- 広告エリアここまで -->
-
-			<!-- 記事２ここから -->
-			<div class="article--card">
-				<article>
-					<a href="#">
-						<div class="card--left">
-							<div class="user-icon">
-								<p>
-									<img src="#" alt="#">
-								</p>
-							</div>
-						</div>
-						<div class="card--right">
-							<h2>タイトル</h2>
-							<div class="card-label">
-								<p>Location: Tokyo</p>
-								<p>Category: groumet</p>
-							</div>
-						</div>
-						<div class="card--meta">
-							<p>Answer: 0 people</p>
-							<p>
-								<time datatime="YYYY-MM-DDThh:mm:ssTZD">2018/05/12</time>
-							</p>
-						</div>
 					</a>
 				</article>
+				<!-- 広告エリアここまで -->
+
+				<!-- 記事２ここから -->
+				<article class="p-article__card c-card">
+						<a href="#" class="c-card__link">
+							<div class="c-card__left">
+								<div class="c-card__left-column c-user-icon">
+									<p class="c-user-icon__image">
+										<img src="#" alt="#">
+									</p>
+								</div>
+							</div>
+							<div class="c-card__right-column">
+								<h2>タイトル</h2>
+								<ul class="c-card__right-column__labels">
+									<li class="c-card__right-column__label">Location: Tokyo</li>
+									<li class="c-card__right-column__label">Category: groumet</li>
+								</ul>
+							</div>
+							<div class="c-card__meta">
+								<p class="c-card__meta__left-column">Answer: 0 people</p>
+								<p class="c-card__meta__right-column">
+									<time datatime="YYYY-MM-DDThh:mm:ssTZD">2018/05/12</time>
+								</p>
+							</div>
+						</a>
+					</article>
+				<!-- 記事２ここまで -->
 			</div>
-			<!-- 記事２ここまで -->
+			<!-- .articesここまで -->
+
 		</div>
 		<!-- メインコンテンツここまで -->
 
