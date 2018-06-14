@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/question.css">
+    <title>質問ページ</title>
+</head>
+
+<body>
+<!--wrapperここから -->
+<div id="wrapper">
+    <div id="header">
+        <header>
+            <h1 class="p-header--title">
+                <span>おもてなし</span>
+                質問内容(質問・回答側)
+            </h1>
+        </header>
+    </div>
+
+    <!-- グローバルナビゲーションここから -->
+    <nav id="nav">
+        <ul class="p-global-nav__items">
+            <li class="p-global-nav__item">
+                <a href="#" class="p-global-nav__item__link">
+                    <img src="#" alt="質問ページ">
+                </a>
+            </li>
+            <li class="p-global-nav__item">
+                <a href="#" class="p-global-nav__item__link">
+                    <img src="#" alt="メール">
+                </a>
+            </li>
+            <li class="p-global-nav__item">
+                <a href="#" class="p-global-nav__item__link">
+                    <img src="#" alt="検索">
+                </a>
+            </li>
+            <li class="p-global-nav__item">
+                <a href="#" class="p-global-nav__item__link">
+                    <img src="#" alt="周辺Map">
+                </a>
+            </li>
+            <li class="p-global-nav__item">
+                <a href="#" class="p-global-nav__item__link">
+                    <img src="#" alt="ユーザー情報">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- グローバルナビゲーションここまで -->
+
+
+
+    <!-- メインコンテンツここから（記事一覧を入れるところ。基本ここを使い回す） -->
+    <div class="main">
+        <div class="p-article">
+            <div class="p-article--card sos">
+                <div class="c-card__left">
+                    <div class="c-card__left-column c-user-icon">
+                        <p class="c-user-icon__image">
+                            <img src="#" alt="#">
+                        </p>
+                    </div>
+                </div>
+                <div class="c-card__right-column c-card__right-column--sos">
+                    <h2>タイトル</h2>
+                    <div class="c-sos-label">
+                        <p>SOS</p>
+                    </div>
+                    <ul class="c-card__right-column__labels">
+                        <li class="c-card__right-column__label">Location: Tokyo</li>
+                        <li class="c-card__right-column__label">Category: groumet</li>
+                    </ul>
+                </div>
+                <div class="card-question">
+                    <p>I am locking for delicious food in Tokyo but can you recommend it?</p>
+
+                    <p class="c-card__meta__right-column">
+                        <time datatime="YYYY-MM-DDThh:mm:ssTZD">2018/05/12</time>
+                    </p>
+                </div>
+                <div class="c-card--meta">
+                    <p class="c-card__meta__left-column">Answer: 0 people</p>
+
+                    <!-- 回答者側のみ表示 -->
+                    <button class="c-card__meta__left-answer">Answer</button>
+                </div>
+            </div>
+
+            <!-- 回答者のリスト -->
+            <div class="answer-list">
+
+                <!-- 入力フォーム(Answerのボタンをタップした時、表示) -->
+                <div class="answer-card">
+                    <form action="#" method="post">
+                        <input type="text" class="answer__input">
+                        <input type="submit" class="answer__post" value="post">
+                    </form>
+                </div>
+                <!-- 入力フォームここまで -->
+
+                <!-- 回答者の記事 -->
+                <div class="answer-card">
+
+                    <div class="answer-card__left">
+                        <div class="answer-card__left-column answer-card-user-icon">
+                            <p class="answer-card-user-icon__image">
+                                <img src="#" alt="#">
+                            </p>
+                        </div>
+                        <div class="answer-card___left--user-id">
+                            <p>vtuber2525</p>
+                        </div>
+                    </div>
+                    <div class="answer-card__right">
+                        <p class="answer-card__right--message">I know delicious food!!</p>
+
+                        <!-- 質問者側のみ表示 -->
+                        <button class="answer-card__right--chat-start">Chat</button>
+                    </div>
+                </div>
+                <!-- 回答者の記事ここまで -->
+            </div>
+        </div>
+        <!-- 回答者のリストここまで -->
+        </div>
+
+</div>
+<!-- メインコンテンツここまで -->
+
+
+<!-- wrapperここまで -->
+</body>
+
+</html>
