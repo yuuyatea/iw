@@ -94,14 +94,14 @@
             <!-- 回答者のリスト -->
             <div class="answer-list">
 
-                <!-- 入力フォーム(Answerのボタンをタップした時、表示) -->
+                <!-- 回答入力フォーム(Answerのボタンをタップした時、表示) -->
                 <div class="answer-card">
                     <form action="#" method="post">
                         <input type="text" class="answer__input">
                         <input type="submit" class="answer__post" value="post">
                     </form>
                 </div>
-                <!-- 入力フォームここまで -->
+                <!-- 回答入力フォームここまで -->
 
                 <!-- 回答者の記事 -->
                 <div class="answer-card">
@@ -141,15 +141,18 @@
     <div class="SOS-form">
         <h3>SOS投稿フォーム</h3>
         <div>
+            <form action="">
             <p>タイトル</p>
-            <input type="text" class="SOS-form__title">
+            <input type="text" id="title" class="SOS-form__title">
             <p>質問本文</p>
-            <input type="text" class="SOS-form__con">
+            <input type="text" id="SOSText" class="SOS-form__con">
             <p>カテゴリ</p>
-            <select name="Category" id="">
+            <select name="Category" id="Category">
                 <option value="gourmet">gourmet</option>
             </select>
             <p>場所</p>
+                <input type="text" id="place">
+            </form>
         </div>
     </div>
     <!-- 入力フォームのモーダルここまで -->
