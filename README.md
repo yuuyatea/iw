@@ -19,9 +19,12 @@ CSSの構成案はFLOCSS。スタイルシート言語はSCSSを使います。
 #### レイアウトの構造(layout.scssに記述するセレクタ)について
 layout.scssに記載するセレクタの先頭は`l-`から始まるものではなくIDをつかう。  
 なので、このファイルにあるセレクタは全て＃始まりとし、`#element{ ... }`という構造になる。
+-----
 
 #### リストタグの命名規則について
-ul-liタグに限り、通常の命名規則とは異なる命名法則にします。
+要素については基本的に`sass/object/project/`に格納されるセレクタの場合`p-要素名`、`sass/object/component/`に格納されるcomponentの場合`c-要素名`、`sass/object/utility/`に格納されるutilityの場合`u-要素名`といったように必ず先頭にレイヤー名の頭文字を指定してください。
+
+ただし、ul-liタグに限り、通常の命名規則とは異なる命名法則にします。
 
 FLOCSSのセレクタの命名規則はBEM(Block/Element/Modifier)を採用しています。  
 しかし、従来の形式でマークアップをすると冗長になってしまうので、上コードのように単語が重複している場合は親のitemを複数形にし、子に当たるelementは単数形にしています。
@@ -49,6 +52,7 @@ FLOCSSのセレクタの命名規則はBEM(Block/Element/Modifier)を採用し�
 
 上コードの場合、`.p-gloval-nav__items`の子要素は`.p-gloval-nav__item`のようにsを抜いて名前をつけています。
 
+----
 
 #### インライン要素について
 `<img ~ >`や`<span> ~ </span>`などにクラスは基本当てないでください。  
@@ -58,9 +62,6 @@ FLOCSSのセレクタの命名規則はBEM(Block/Element/Modifier)を採用し�
 
 
 
------------
-
-
 ### CSSの書き方について
 - エレメントごとに&でネストする。
-- modifierは親要素の一番下に記述する。
+- 繰り返し使う値は`foundation/variable.scss`に記述する

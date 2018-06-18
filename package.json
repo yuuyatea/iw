@@ -6,12 +6,11 @@
   "author": "botti",
   "license": "MIT",
   "scripts": {
-    "dev": "node-sass -w --output-style expanted assets/sass/question.scss public/css/question.css",
+    "cpl": "node-sass -w --output-style expanted assets/scss/question.scss public/css/question.css",
     "sync": "browser-sync start --server --files '**/*'"
   },
   "dependencies": {
-    "browser-sync": "^2.24.4",
-    "normalize.css": "^8.0.0"
+    "browser-sync": "^2.24.4"
   },
   "devDependencies": {
     "node-sass": "^4.9.0"

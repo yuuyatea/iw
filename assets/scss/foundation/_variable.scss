@@ -1,11 +1,14 @@
 @charset "utf-8";
 // foundation/_variable.scss
 
+/*
+ * 重複しそうな値だけ以下に記述 
+ *
+*/
+
 $default-font-color : #333;
-$default-background-color: #fff;
+$default-background-color: #f5f5f5;
 $default-font-size: 13px;
 $default-line-height: 170%;
 $default-a-color: #777;
 $default-border-color: #dfdfdf;
-
-$header-color: #547829;
