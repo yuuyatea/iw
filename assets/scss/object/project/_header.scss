@@ -6,10 +6,9 @@
 	&--title{
 		font-size: 25px;
 		color: #fff;
-		background: #333;
+		background: $header-background;
 		line-height: 200%;
 		padding: 0 10px;
-
 		span{
 			display: none;
 		}

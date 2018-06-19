@@ -5,162 +5,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/question.css">
+    <link rel="stylesheet" href="./css/common.css">
     <title>質問ページ</title>
 </head>
 
 <body>
-<!--wrapperここから -->
-<div id="wrapper">
-    <header id="header">
-        <h1 class="p-header--title">
-            <span>おもてなし</span>
-            質問詳細
-        </h1>
-    </header>
+    <!--wrapperここから -->
+    <div id="wrapper">
+        <header id="header">
+            <h1 class="p-header--title">
+                <span>おもてなし</span>
+                質問詳細
+            </h1>
+        </header>
 
-    <!-- グローバルナビゲーションここから -->
-    <nav id="nav">
-        <ul class="p-global-nav__items">
-            <li class="p-global-nav__item">
-                <a href="#" class="p-global-nav__item__link">
-                    <img src="./images/q.png" alt="質問ページ">
-                </a>
-            </li>
-            <li class="p-global-nav__item">
-                <a href="#" class="p-global-nav__item__link">
-                    <img src="./images/m.png" alt="メール">
-                </a>
-            </li>
-            <li class="p-global-nav__item">
-                <a href="#" class="p-global-nav__item__link">
-                    <img src="./images/s.png" alt="検索">
-                </a>
-            </li>
-            <li class="p-global-nav__item">
-                <a href="#" class="p-global-nav__item__link">
-                    <img src="./images/ma.png" alt="周辺Map">
-                </a>
-            </li>
-            <li class="p-global-nav__item">
-                <a href="#" class="p-global-nav__item__link">
-                    <img src="./images/u.png" alt="ユーザー情報">
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <!-- グローバルナビゲーションここまで -->
+        <!-- グローバルナビゲーションここから -->
+        <nav id="nav">
+            <ul class="p-global-nav__items">
+                <li class="p-global-nav__item">
+                    <a href="#" class="p-global-nav__item__link">
+                        <img src="./images/q.png" alt="質問ページ">
+                    </a>
+                </li>
+                <li class="p-global-nav__item">
+                    <a href="#" class="p-global-nav__item__link">
+                        <img src="./images/m.png" alt="メール">
+                    </a>
+                </li>
+                <li class="p-global-nav__item">
+                    <a href="#" class="p-global-nav__item__link">
+                        <img src="./images/s.png" alt="検索">
+                    </a>
+                </li>
+                <li class="p-global-nav__item">
+                    <a href="#" class="p-global-nav__item__link">
+                        <img src="./images/ma.png" alt="周辺Map">
+                    </a>
+                </li>
+                <li class="p-global-nav__item">
+                    <a href="#" class="p-global-nav__item__link">
+                        <img src="./images/u.png" alt="ユーザー情報">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- グローバルナビゲーションここまで -->
 
 
-
-    <!-- メインコンテンツここから（記事一覧を入れるところ。基本ここを使い回す） -->
-    <div class="main">
-        <!-- 記事について -->
-        <div class="p-article">
-            <!-- 記事１ここから -->
-            <div class="p-article--card sos">
-                <div class="c-card__left">
-                    <div class="c-card__left-column c-user-icon">
-                        <p class="c-user-icon__image">
-                            <img src="#" alt="#">
-                        </p>
-                    </div>
-                </div>
-                <div class="c-card__right-column c-card__right-column--sos">
-                    <h2>タイトル</h2>
-                    <div class="c-sos-label">
-                        <p>SOS</p>
-                    </div>
-                    <ul class="c-card__right-column__labels">
-                        <li class="c-card__right-column__label">Location: Tokyo</li>
-                        <li class="c-card__right-column__label">Category: gourmet</li>
-                    </ul>
-                </div>
-                <div class="card-question">
-                    <p>I am locking for delicious food in Tokyo but can you recommend it?</p>
-
-                    <p class="c-card__meta__right-column">
-                        <time datatime="YYYY-MM-DDThh:mm:ssTZD">2018/05/12</time>
-                    </p>
-                </div>
-                <div class="c-card--meta">
-                    <p class="c-card__meta__left-column">Answer: 0 people</p>
-
-                    <!-- 回答者側のみ表示 -->
-                    <button class="c-card__meta__left-answer">Answer</button>
-                </div>
-            </div>
-
-            <!-- 回答者のリスト -->
-            <div class="answer-list">
-
-                <!-- 回答入力フォーム(Answerのボタンをタップした時、表示) -->
-                <div class="answer-card">
-                    <form action="#" method="post">
-                        <input type="text" class="answer__input">
-                        <input type="submit" class="answer__post" value="post">
-                    </form>
-                </div>
-                <!-- 回答入力フォームここまで -->
-
-                <!-- 回答者の記事 -->
-                <div class="answer-card">
-
-                    <div class="answer-card__left">
-                        <div class="answer-card__left-column answer-card-user-icon">
-                            <p class="answer-card-user-icon__image">
-                                <img src="#" alt="#">
+        <!-- メインコンテンツここから -->
+        <div id="main">
+            <!-- 記事について -->
+            <div class="p-article">
+                <!-- 記事１ここから -->
+                <div class="p-article__card c-card">
+                    <div class="c-card__grid c-card__grid--detail">
+                        <div class="c-card__grid__left-column c-user-icon">
+                            <p class="c-user-icon__image">
+                                <img src="./images/user-icon.png" alt="#">
                             </p>
                         </div>
-                        <div class="answer-card___left--user-id">
-                            <p>VTuber2525</p>
+                        <div class="c-card__grid__right-column">
+                            <h2>タイトル</h2>
+                            <ul class="c-card__grid__right-column__labels">
+                                <li class="c-card__grid__right-column__label">Location: Tokyo</li>
+                                <li class="c-card__grid__right-column__label">Category: gourmet</li>
+                            </ul>
+                        </div>
+                        <div class="c-card__grid--detail__content">
+                                <p>
+                                    text here dummy
+                                </p>
+                            </div>
+                        <div class="c-card__grid__meta">
+                            <p class="c-card__grid__meta__left-column">Answer: 0 people</p>
+                            <p class="c-card__grid__meta__right-column">
+                                <time datatime="YYYY-MM-DDThh:mm:ssTZD">2018/05/12</time>
+                            </p>
                         </div>
                     </div>
-                    <div class="answer-card__right">
-                        <p class="answer-card__right--message">I know delicious food!!</p>
-
-                        <!-- 質問者側のみ表示 -->
-                        <button class="answer-card__right--chat-start">Chat</button>
-                    </div>
                 </div>
-                <!-- 回答者の記事ここまで -->
+
+                    <!-- 回答入力フォーム(Answerのボタンをタップした時、表示) -->
+                    <div class="p-answer-form c-message-form">
+                        <form action="#" method="post">
+                            <input type="text" class="p-answer-form__input c-message-form__input">
+                            <input type="submit" class="p-answer-form__button c-message-form__button" value="post">
+                        </form>
+                    </div>
+                    <!-- 回答入力フォームここまで -->
+
+                    <!-- 回答者のリスト -->
+                    <div class="p-article">
+                        <!-- 回答者の記事ここから -->
+                        <div class="p-article__card c-card">
+                            <div class="c-card__grid c-card__grid--answer">
+                                <div class="c-card__grid__left-column c-user-icon">
+                                    <p class="c-user-icon__image">
+                                        <img src="./images/user-icon.png" alt="#">
+                                    </p>
+                                    <p class="c-card__grid--answer__left-column__user-id">userid</p>
+                                </div>
+                                <div class="c-card__grid__right-column">
+                                    <div class="c-card__grid__right-column__comment">
+                                        <p>usercomment</p>
+                                    </div>
+                                    <div class="c-card__grid--answer__right-column__chat-button c-message-form">
+                                        <!-- 管理者側のみ表示ここから -->
+                                        <a href="#" class="c-message-form__button">CHAT</a>
+                                        <!-- 管理者側のみ表示ここまで -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 回答者の記事ここまで -->
+                    </div>
+                    <!-- 回答者のリストここまで -->
+
+
+                <!-- SOSのリンク -->
+                <div class="c-contribution">
+                    <a class="c-contribution__button">
+                        <img src="#" alt="プラスのボタン">
+                    </a>
+                </div>
+                <!-- SOSのリンク -->
+
+                <!-- 入力フォームのモーダル(SOSのリンク押した時に表示) -->
+                <!-- どういうことかわからない??? -->
+                <!-- <div class="c-message-form">
+                    <h3>SOS投稿フォーム</h3>
+                    <div>
+                        <form action="">
+                            <label for="title" class="c-message-form__label">タイトル</label>
+                            <input type="text" id="title" class="c-messsage-form__text">
+                            <label for="SOSText">質問本文</label>
+                            <input type="text" id="SOSText" class="c-message-form__textarea">
+                            <label for="Category">カテゴリ</label>
+                            <select name="Category" id="Category">
+                                <option value="gourmet">gourmet</option>
+                            </select>
+                            <p>場所</p>
+                            <input type="text" id="place">
+                        </form>
+                    </div>
+                </div> -->
+                <!-- 入力フォームのモーダルここまで -->
             </div>
-        </div>
-        <!-- 回答者のリストここまで -->
-        </div>
-
-    <!-- SOSのリンク -->
-    <div class="contribution">
-        <p class="contribution__button">
-            <img src="#" alt="プラスのボタン">
-        </p>
-    </div>
-    <!-- SOSのリンク -->
-
-    <!-- 入力フォームのモーダル(SOSのリンク押した時に表示) -->
-    <div class="SOS-form">
-        <h3>SOS投稿フォーム</h3>
-        <div>
-            <form action="">
-            <p>タイトル</p>
-            <input type="text" id="title" class="SOS-form__title">
-            <p>質問本文</p>
-            <input type="text" id="SOSText" class="SOS-form__con">
-            <p>カテゴリ</p>
-            <select name="Category" id="Category">
-                <option value="gourmet">gourmet</option>
-            </select>
-            <p>場所</p>
-                <input type="text" id="place">
-            </form>
-        </div>
-    </div>
-    <!-- 入力フォームのモーダルここまで -->
-</div>
-<!-- メインコンテンツここまで -->
+            <!-- メインコンテンツここまで -->
 
 
-<!-- wrapperここまで -->
+            <!-- wrapperここまで -->
 </body>
 
 </html>

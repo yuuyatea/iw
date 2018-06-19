@@ -6,7 +6,7 @@
   "author": "botti",
   "license": "MIT",
   "scripts": {
-    "cpl": "node-sass -w --output-style expanted assets/scss/question.scss public/css/question.css",
+    "cpl": "node-sass -w --output-style expanted assets/scss/common.scss public/css/common.css",
     "sync": "browser-sync start --server --files '**/*'"
   },
   "dependencies": {
