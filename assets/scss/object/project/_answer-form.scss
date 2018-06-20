@@ -1,0 +1,22 @@
+@charset "utf-8";
+// object/project/_answer-list.scss
+
+.p-answer-form {
+	position: fixed;
+	bottom: $nav-height;
+	height: 50px;
+	background: #fff;
+	width: 90%;
+	padding: 10px 5%; 
+	&__input {
+		height: 35px;
+		width: 70%;
+	}
+	&__button {
+		height: 35px;
+		width: calc(20% - 10px);
+		margin-left: 10px;
+		text-transform: uppercase;
+		letter-spacing: 1.5px;
+	}
+}

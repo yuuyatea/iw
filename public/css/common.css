@@ -1,0 +1,200 @@
+@charset "UTF-8";
+@import url(normalize.css);
+/*
+ * 重複しそうな値だけ以下に記述 
+ *
+*/
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 13px;
+  line-height: 170%; }
+
+h1, h2, h3, h4, h5, h6, div, p, ul, ol, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+  font-weight: normal;
+  line-height: 170%; }
+
+ul, ol {
+  list-style: none;
+  list-style-image: none; }
+
+a {
+  display: block;
+  word-break: break-all;
+  text-decoration: none;
+  font-size: #777; }
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle; }
+
+tr {
+  display: table-row;
+  position: relative;
+  vertical-align: middle; }
+
+td, th {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0; }
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic; }
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+button {
+  -webkit-touch-callout: none; }
+
+#wrapper {
+  height: 100%;
+  position: relative; }
+
+#header {
+  height: 60px; }
+
+#main {
+  margin-bottom: 150px; }
+
+#nav {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0; }
+
+.c-card {
+  background: #fff; }
+  .c-card__grid {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-auto-rows: minmax(50px, auto);
+    color: #333; }
+    .c-card__grid__left-column {
+      text-align: center; }
+    .c-card__grid__right-column {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr); }
+      .c-card__grid__right-column h2 {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        font-size: 20px;
+        font-weight: bold; }
+      .c-card__grid__right-column__labels {
+        display: flex;
+        justify-content: space-between;
+        grid-row: 2 / 3;
+        grid-column: 1 / 3; }
+      .c-card__grid__right-column__comment p {
+        font-weight: bold; }
+      .c-card__grid__right-column--sos {
+        grid-template-columns: 1fr 50px; }
+        .c-card__grid__right-column--sos__label p {
+          font-size: 150%;
+          font-weight: bold;
+          color: #f00; }
+        .c-card__grid__right-column--sos__labels {
+          grid-column: 1 / 3; }
+    .c-card__grid__meta {
+      display: flex;
+      justify-content: space-between;
+      grid-column: 1 / 3;
+      margin-top: 10px;
+      padding: 10px 0 0;
+      border-top: 1px solid #dfdfdf; }
+    .c-card__grid--detail__content {
+      grid-column: 1 / 3;
+      padding: 10px 5% 0; }
+    .c-card__grid--answer__right-column__chat-button {
+      line-height: 35px;
+      text-align: center;
+      width: 70px;
+      display: block;
+      margin: 0 0 0 auto; }
+
+.c-user-icon img {
+  border-radius: 100%;
+  max-width: 80px;
+  width: 100%; }
+
+.c-message-form__input {
+  border: 0;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px; }
+
+.c-message-form__button {
+  border-radius: 5px;
+  background: #333;
+  color: #fff; }
+
+.p-header--title {
+  font-size: 25px;
+  color: #fff;
+  background: #333;
+  line-height: 200%;
+  padding: 0 10px; }
+  .p-header--title span {
+    display: none; }
+
+.p-global-nav__items {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+  background: #fff; }
+
+.p-global-nav__item {
+  display: block;
+  width: 70px; }
+  .p-global-nav__item__link img {
+    max-width: 60px;
+    max-height: 50px; }
+
+.p-article__card {
+  margin: 5vw 10%;
+  padding: 3vw 5vw;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px #dfdfdf; }
+
+.p-answer-form {
+  position: fixed;
+  bottom: 50px;
+  height: 50px;
+  background: #fff;
+  width: 90%;
+  padding: 10px 5%; }
+  .p-answer-form__input {
+    height: 35px;
+    width: 70%; }
+  .p-answer-form__button {
+    height: 35px;
+    width: calc(20% - 10px);
+    margin-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; }
