@@ -5,89 +5,99 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="./css/question.css">
+	<link rel="stylesheet" href="./css/common.css">
 	<title>チャットページ</title>
 </head>
 
 <body>
-<!--wrapperここから -->
-  <div id="wrapper">
-    <div id="header">
-      <header>
-        <h1 class="p-header--title">
-          <span>おもてなし</span>
-          チャット
-        </h1>
-      </header>
-    </div>
+	<!--wrapperここから -->
+	<div id="wrapper">
+		<div id="header">
+			<header>
+				<h1 class="p-header--title">
+					<span>おもてなし</span>
+					チャット
+				</h1>
+			</header>
+		</div>
 
-    <!-- グローバルナビゲーションここから -->
-    <nav id="nav">
-      <ul class="p-global-nav__items">
-        <li class="p-global-nav__item">
-          <a href="#" class="p-global-nav__item__link">
-            <img src="#" alt="質問ページ">
-          </a>
-        </li>
-        <li class="p-global-nav__item">
-          <a href="#" class="p-global-nav__item__link">
-            <img src="#" alt="メール">
-          </a>
-        </li>
-        <li class="p-global-nav__item">
-          <a href="#" class="p-global-nav__item__link">
-            <img src="#" alt="検索">
-          </a>
-        </li>
-        <li class="p-global-nav__item">
-          <a href="#" class="p-global-nav__item__link">
-            <img src="#" alt="周辺Map">
-          </a>
-        </li>
-        <li class="p-global-nav__item">
-          <a href="#" class="p-global-nav__item__link">
-            <img src="#" alt="ユーザー情報">
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <!-- グローバルナビゲーションここまで -->
+		<!-- グローバルナビゲーションここから -->
+		<nav id="nav">
+			<ul class="p-global-nav__items">
+				<li class="p-global-nav__item">
+					<a href="#" class="p-global-nav__item__link">
+						<img src="#" alt="質問ページ">
+					</a>
+				</li>
+				<li class="p-global-nav__item">
+					<a href="#" class="p-global-nav__item__link">
+						<img src="#" alt="メール">
+					</a>
+				</li>
+				<li class="p-global-nav__item">
+					<a href="#" class="p-global-nav__item__link">
+						<img src="#" alt="検索">
+					</a>
+				</li>
+				<li class="p-global-nav__item">
+					<a href="#" class="p-global-nav__item__link">
+						<img src="#" alt="周辺Map">
+					</a>
+				</li>
+				<li class="p-global-nav__item">
+					<a href="#" class="p-global-nav__item__link">
+						<img src="#" alt="ユーザー情報">
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- グローバルナビゲーションここまで -->
 
-    <!-- メインコンテンツここから（記事一覧を入れるところ。基本ここを使い回す） -->
-    <div class="main">
-      <div class="p-chat">
-        <div class="p-chat__sentence">
-          <p class="p-chat__sentence__right-column">
-            <span class="p-chat__sentence__right-column__icon"><img src="#" alt="#"></span>
-            <span class="p-chat__sentence__right-column__global-lang">Hello!It is my first to visit to japan</span>
-            <span class="p-chat__sentence__right-column__japan-lang">初めて日本に訪れたよ！</span>
-          </p>
-        </div>
-        <div class="p-chat__sentence">
-            <p class="p-chat__sentence__left-column">
-              <span class="p-chat__sentence__left-column__icon"><img src="#" alt="#"></span>
-              <span class="p-chat__sentence__left-column__global-lang">ok</span>
-              <span class="p-chat__sentence__left-column__japan-lang">なるほど・・・</span>
+		<!-- メインコンテンツここから（記事一覧を入れるところ。基本ここを使い回す） -->
+		<div class="main">
+			<div class="p-chat">
+				<div class="p-chat__sentence">
+					<div class="p-chat__sentence__right-column">
+						<p class="p-chat__sentence__right-column__icon">
+							<img src="#" alt="#">
+						</p>
+						<p class="p-chat__sentence__right-column__global-lang">Hello!It is my first to visit to japan</p>
+						<p class="p-chat__sentence__right-column__japan-lang">初めて日本に訪れたよ！</p>
+					</div>
+				</div>
+				<div class="p-chat__sentence">
+					<div class="p-chat__sentence__left-column">
+						<p class="p-chat__sentence__left-column__icon c-user-icon">
+							<img src="#" alt="#">
             </p>
-          </div>
-      </div>
-      <div class="post">
-        <input class="post__input" type="text">
-        <input class="post__button" type="submit">
-      </div>
-		<!-- チャット終了画面(モーダル) -->
-      <div class="p-chat__end">
-        <p>チャットを終了しますか？</p>
-        <p><a href="#">yes</a></p>
-        <p><a href="#">no</a></p>
-      </div>
-    </div>
+						<p class="p-chat__sentence__left-column__global-lang">ok</p>
+						<p class="p-chat__sentence__left-column__japan-lang">なるほど・・・</p>
+					</div>
+				</div>
+			</div>
+			<div class="p-post c-message-form">
+				<form>
+					<input class="p-post__input c-message-form__input" type="text">
+					<input class="p-post__button c-message-form__button" type="submit">
+				</form>
+			</div>
+			<!-- チャット終了画面(モーダル) -->
+			<div class="p-chat__end">
+				<p>チャットを終了しますか？</p>
+				<p class="p-chat__end__button c-button">
+					<a href="#">yes</a>
+				</p>
+				<p class="p-chat__end__button c-button">
+					<a href="#">no</a>
+				</p>
+			</div>
+		</div>
 
 
-  </div>
-<!-- メインコンテンツここまで -->
+	</div>
+	<!-- メインコンテンツここまで -->
 
-<!-- wrapperここまで -->
+	<!-- wrapperここまで -->
 </body>
 
 </html>
