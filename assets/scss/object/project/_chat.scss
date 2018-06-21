@@ -1,0 +1,48 @@
+@charset "utf-8";
+// object/project/_chat.scss
+
+.p-chat {
+	&__sentence {
+		margin: 3vw 3%;
+		border-radius: 5px;
+    &__right-column {
+      display: flex;
+      align-items: center;
+      &__user-info {
+        width: 25%;
+        text-align: center;
+        &__name {
+          font-size: 0.1rem;
+        }
+      }
+      &__lang {
+        max-width: 75%;
+        justify-content: flex-start;
+        text-align: left;
+    		padding: 2vw 3vw;
+        background: #EEEEEE;
+        border-radius: 0.5rem;
+      } 
+    }
+    &__left-column {
+      display: flex;
+      align-items: center;
+      flex-flow: row-reverse;
+      &__user-info {
+        width: 25%;
+        text-align: center;
+        &__name {
+          font-size: 0.1rem;
+        }
+      }
+      &__lang {
+        max-width: 75%;
+        justify-content: flex-end;
+        text-align: left;
+    		padding: 2vw 3vw;
+        background: #C5E1A5;
+        border-radius: 0.5rem;
+      } 
+    }
+	}
+}
